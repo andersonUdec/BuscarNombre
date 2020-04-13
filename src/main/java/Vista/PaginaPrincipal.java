@@ -12,14 +12,21 @@ import javax.swing.JList;
 
 /**
  *
- * @author ANDERSON
+ * @author ANDERSON SUAREZ Y ALBERT CHARRY
+ * Clase principal 
  */
 public class PaginaPrincipal extends javax.swing.JFrame {
     /**
      * Creates new form PaginaPrincipal
      */
+    
+    /**
+     * contructor de la clase principal
+     * llenado de la lista para la consulta de los nombres
+     */
     public PaginaPrincipal() {
         initComponents();
+        
         
         LT_Nombres.add("Anderson");
         LT_Nombres.add("Jose");
@@ -34,7 +41,7 @@ public class PaginaPrincipal extends javax.swing.JFrame {
         LT_Nombres.add("Hernesto");
         LT_Nombres.add("Xiomara");
         LT_Nombres.add("Johans");
-        LT_Nombres.add("Zorraida");
+        LT_Nombres.add("Zoraida");
         LT_Nombres.add("Rocio");
 
     }

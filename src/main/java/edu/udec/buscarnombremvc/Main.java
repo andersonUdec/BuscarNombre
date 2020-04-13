@@ -10,7 +10,9 @@ import Vista.PaginaPrincipal;
 
 /**
  *
- * @author ANDERSON
+ * @author ANDERSON SUAREZ ALBERT CHARRY
+ * 
+ * 
  */
 public class Main {
     public static void main(String[] args) {

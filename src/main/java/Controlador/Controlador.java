@@ -6,6 +6,7 @@
 package Controlador;
 import Modelo.Modelo;
 import Vista.PaginaPrincipal;
+import java.awt.List;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -13,7 +14,7 @@ import javax.swing.DefaultListModel;
 
 /**
  *
- * @author ANDERSON
+ * @author ANDERSON SUAREZ ALBERT CHARRY
  */
 public class Controlador implements ActionListener { 
     Modelo modelo;
@@ -49,10 +50,15 @@ public class Controlador implements ActionListener {
             }
         }
     }
+    /**
+     * Metodo encardado de enviar el valor tomado por la caja de texto a la clase modelo
+     */
     public void coincidencias(){
         modelo.setNombre(vista.JTF_Busqueda.getText());
         modelo.setNombres(vista.LT_Nombres);
-        modelo.coincidencias();
-        vista.LT_NO =(modelo.getNombresCoincidencias());
+        List aux = modelo.coincidencias();
+        for(int i=0;i<aux.getItemCount();i++){
+            vista.LT_NO.add(aux.getItem(i));
+        }
     }
 }
